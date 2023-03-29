@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -17,9 +18,17 @@ class MyHomePage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
-                  "image/logo.png",
-                  width: 72,
+                Column(
+                  children: [
+                    Image.asset(
+                      "image/logo.png",
+                      width: 72,
+                    ),
+                    // Text(
+                    //   "Mega Flix",
+                    //   style: TextStyle(color: Colors.white),
+                    // )
+                  ],
                 ),
                 Row(
                   children: [
